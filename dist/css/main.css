@@ -41,8 +41,10 @@ header {
   z-index: 2;
   width: 100%; }
 
-.text-secondary {
-  color: #fdb643; }
+.gradient-text {
+  background: linear-gradient(to right, #f39f17, #eb7d34);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 main {
   padding: 4rem;
