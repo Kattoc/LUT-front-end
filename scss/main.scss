@@ -1,7 +1,6 @@
 
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 * {
     box-sizing: border-box;
@@ -10,8 +9,9 @@
 body {
     @include background;
     background: $primary-color;
-    color: #fff;
-    height: 100%;
+    color: set-text-color($primary-color);
+    // height: 100%;
+    min-height: calc(100vh - 60px);
     margin: 0;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
@@ -75,3 +75,52 @@ main {
         }
     }
 }
+
+.about-info {
+    display: grid;
+    grid-template-areas:
+    'bioimage bio'
+    'job-1 job-2';
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+
+    .bio-image {
+        grid-area: bioimage;
+        width: 277px;
+        height: 256px;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+
+    .bio {
+        grid-area: bio;
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+
+    .job-1 {
+        grid-area: job-1;
+    }
+
+    .job-2 {
+        grid-area: job-2;
+    }
+
+    .job {
+        background: lighten($primary-color, 5);
+        padding: 1.5rem;
+        border-bottom: $secondary-color 5px solid;
+        margin: 1rem;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+}
+
+@import 'mobile';
