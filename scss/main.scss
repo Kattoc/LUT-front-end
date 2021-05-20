@@ -1,5 +1,7 @@
+
 @import 'config';
 @import 'menu';
+@import 'mobile';
 
 * {
     box-sizing: border-box;
@@ -44,7 +46,7 @@ header {
 
 // This gradient text is from https://cssgradient.io/blog/css-gradient-text/.
 .gradient-text {
-    background: linear-gradient(to right, #f39f17, #eb7d34);
+    background: linear-gradient(to right, $secondary-color, adjust-color($secondary-color, $blue: 100, $green: -40));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
