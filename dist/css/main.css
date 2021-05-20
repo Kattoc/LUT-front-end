@@ -98,7 +98,7 @@
 body {
   background: #292828;
   color: #fff;
-  min-height: calc(100vh - 60px);
+  height: 100%;
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1.5; }
@@ -116,12 +116,12 @@ body {
       z-index: -1;
       background: rgba(41, 40, 40, 0.7); }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading, h2.lg-heading, h3.lg-heading, h4.lg-heading, h5.lg-heading, h6.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading, h2.sm-heading, h3.sm-heading, h4.sm-heading, h5.sm-heading, h6.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: rgba(46, 45, 45, 0.5); }
@@ -142,7 +142,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
