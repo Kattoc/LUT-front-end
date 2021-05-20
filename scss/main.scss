@@ -46,7 +46,7 @@ header {
 
 // This gradient text is from https://cssgradient.io/blog/css-gradient-text/.
 .gradient-text {
-    background: linear-gradient(to right, $secondary-color, adjust-color($secondary-color, $blue: 100, $green: -40));
+    background: linear-gradient(to right, $secondary-color, adjust-color($secondary-color, $red: 150, $blue: 150, $green: -50));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
